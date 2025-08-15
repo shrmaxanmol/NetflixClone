@@ -5,7 +5,7 @@ The goal was to replicate the look and feel of the Netflix landing page as close
 focusing on the layout design.
 
 **Live Demo:** https://github.com/shrmaxanmol/NetflixClone/
-**Website Link:** https://shrmaxanmol.github.io/NetflixClone/
+**Website Link:** [https://shrmaxanmol.github.io/NetflixClone/](https://shrmaxanmol.github.io/NetflixClone)
 
 ---
 
