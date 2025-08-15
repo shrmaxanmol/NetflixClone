@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: url(images/Netflix\ bg\ img.jpg);
+    background-position: center center;
+    background-size: cover; /*max(1200px, 100vw);*/
+    height: 100vh;
+    position: relative;
+}
+
+.box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.75;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+}
+
+nav {
+    max-width: 100%;
+    padding: 20px 60px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+nav div {
+    display: flex;
+    gap: 15px;
+}
+
+
+nav img {
+    width: 200px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: calc(100% - 70px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 15px;
+    padding: 0 20px;
+}
+
+.hero> :nth-child(1) {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+}
+
+.separation {
+    background: black;
+    height: 3px;
+    background-color: #ff1a1a;
+    box-shadow: 0 0 10px #4c1aff, 0 0 20px #4c1aff;
+}
+
+.lang-btn {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.lang-btn .arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid white;
+    /* down arrow */
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    border: 1px solid white;
+    padding: 8px 25px;
+    border-radius: 3px;
+}
+
+.btn-red-si {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px 18px;
+}
+
+.emailForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 4px;
+}
+
+.emailForm input[type="email"] {
+    padding: 18px 12px;
+    font-size: 16px;
+    width: 350px;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    flex: 1;
+}
+
+.emailForm button {
+    padding: 8px 10px;
+    font-size: 18px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.emailForm .btn-red-st {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 28px;
+    cursor: pointer;
+    height: 58px;
+}
+.emailForm .btn-red-st:hover{
+    transition: all 1s ease-out;
+    background-color: rgba(181, 8, 8, 0.978);
+}
+
+main input {
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 12px 28px 10px 5px;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    border: 1px solid whitesmoke;
+}
+
+.sectionTitle {
+    text-align: left;
+    padding: 20px 60px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.trendingContainer {
+    position: relative;
+}
+.trending {
+    display: flex;
+    padding-left: 60px;
+    gap: 50px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.card {
+    position: relative;
+    width: 150px;
+    flex-shrink: 0;
+}
+
+.card img { 
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+span.number {
+    position: absolute;
+    bottom: 10px;
+    left: -20px;
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+    -webkit-text-stroke: 1px white;
+    line-height: 1;
+    font-family: Arial, sans-serif;
+}
+
+.scrollArrow {
+    position: absolute;
+    right: 95px;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: 0;
+    z-index: 10;
+
+    width: 50px; 
+    background: rgba(22, 22, 22, 0.7); 
+    border-radius: 12px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    pointer-events: none; 
+}
+
+.More {
+    text-align: left;
+    padding: 8px 0px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    margin-top: 30px;
+}
+
+.reasons{
+    padding: 50px 60px; 
+}
+
+.reasonsGrid {
+    display: grid; /* Creates the grid! */
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+}
+
+.reasonCard {
+    background: #1a1433; 
+    padding: 24px;
+    border-radius: 15px;
+    position: relative; 
+    min-height: 180px;
+}
+
+.reasonCard h3 {
+    font-size: 21px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.reasonCard p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.reasonCard img {
+    position: absolute;
+    width: 70px; 
+    right: 20px;
+    bottom: 15px; 
+}
+
+.reasonsGrid .reasonCard:nth-child(1) {
+    background: radial-gradient(circle at 100% 0%, rgba(70, 50, 130, 0.6), #1a1433 60%);
+}
+
+.reasonsGrid .reasonCard:nth-child(2) {
+    background: radial-gradient(circle at 0% 0%, rgba(130, 50, 70, 0.5), #1a1433 70%);
+}
+
+.reasonsGrid .reasonCard:nth-child(3) {
+    background: radial-gradient(circle at 0% 100%, rgba(50, 130, 70, 0.5), #1a1433 80%);
+}
+
+.reasonsGrid .reasonCard:nth-child(4) {
+    background: radial-gradient(circle at 100% 100%, rgba(130, 100, 50, 0.5), #1a1433 75%);
+}
+
+.faq {
+    padding: 70px 60px;
+    /* text-align: left;  */
+}
+.faqs{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-align: left; 
+    margin-bottom: 25px;         
+}
+
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(45, 45, 45);
+    padding: 12px 30px;
+    cursor: pointer;
+    text-align: left;
+    margin: 0 0 8px 0;
+}
+.faqbox::after {
+    content: '+'; 
+    font-size: 50px;
+    font-weight: 100; 
+}
+.faqbox:hover{
+    transition: all 1s ease-out;
+    background-color: rgba(255, 255, 255, 0.296);
+}
+
+.hero2{
+    text-align: center;
+    padding: 40px 0;
+}
+.hero2 h3 {
+    color: white;
+    font-size: 20px; 
+    font-weight: 400; 
+    gap: 8px;
+    margin-top: 40px;
+}
+.emailForm2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.emailForm2 input[type="email"] {
+    height: 60px;
+    padding: 0 15px;
+    font-size: 16px;
+    width: 400px;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(22, 22, 22, 0.7);
+}
+
+.emailForm2 button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.emailForm2 .btn-red-st2 {
+   height: 60px; 
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0; 
+    font-size: 26px; 
+    font-weight: 500;
+    padding: 0 25px;
+}
+.emailForm2 .btn-red-st2:hover{
+    transition: all 1s ease-out;
+    background-color: rgba(182, 11, 11, 0.978);
+}
+.hero2> :nth-child(1) {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+footer {
+    padding: 60px 0;
+    max-width: 815px;
+    margin: 70px 50px;
+    margin-top: 20px;
+}
+
+.questions {
+    padding: 0 0 30px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.footerItems{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* margin: 0 0 20px 0;
+    justify-content: left;
+    text-align: left; */
+}
+
+footer a {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.577);
+}
+footer p {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.577);
+}
+
+.langBtn {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 0.1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 50px;
+    margin-left: 2px;
+}
+
+.langBtn .arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid white;
+}
+
+footer h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    margin-top: 40px;
+}
+footer h4 {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    margin-top: 40px;
+}
+footer h4 a {
+    color: rgb(0, 132, 255);
+}
+
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+
+    .sectionTitle {
+        padding: 20px 30px; 
+        font-size: 32px;
+    }
+    .faqs {
+        font-size: 32px;
+    }
+    .reasons, .faq {
+        padding: 50px 30px;
+    }
+
+    nav {
+        padding: 20px 30px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+    .hero> :nth-child(2), .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+    .emailForm {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .emailForm input[type="email"] {
+        width: 100%;
+        max-width: 450px;
+    }
+    .btn-red-st {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+
+    .trending {
+        padding-left: 30px; 
+    }
+    .scrollArrow {
+        height: 100px; 
+        width: 40px;
+        right: 10px;
+    }
+
+    .reasonsGrid {
+        grid-template-columns: 1fr; 
+    }
+
+    .faqbox {
+        font-size: 20px;
+    }
+    .faqbox::after {
+        font-size: 40px;
+    }
+}
+
+/* Mobile Phomes */
+@media (max-width: 480px) {
+
+    .sectionTitle, .faqs {
+        font-size: 26px;
+    }
+    .reasons, .faq, nav {
+        padding: 40px 20px;
+    }
+
+    nav img {
+        width: 120px; 
+    }
+    .lang-btn, .btn-red-si {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 28px;
+    }
+
+    .scrollArrow {
+        display: none; 
+    }
+
+    .faqbox {
+        font-size: 18px;
+    }
+    .faqbox::after {
+        font-size: 32px;
+    }
+}
