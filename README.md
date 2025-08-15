@@ -11,7 +11,6 @@ focusing on the layout design.
 ### Screenshot
 
 ![Netflix Clone Screenshot](./screenshot.png)
-*(Note: To make this work, you'll need to upload a screenshot named `screenshot.png` to your repository later.)*
 
 ---
 
