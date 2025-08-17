@@ -11,7 +11,7 @@ body {
 }
 
 main {
-    background-image: url(images/Netflix\ bg\ img.jpg);
+    background-image: url(Netflix\ bg\ img.jpg);
     background-position: center center;
     background-size: cover; /*max(1200px, 100vw);*/
     height: 100vh;
@@ -584,4 +584,5 @@ footer h4 a {
     .faqbox::after {
         font-size: 32px;
     }
+
 }
