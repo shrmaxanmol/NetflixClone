@@ -1,6 +1,6 @@
 # Netflix Clone 🎬
 
-This is my first major front-end project: a clone of the Netflix homepage, built entirely with **HTML** and **CSS**.
+This is my first front-end project: a clone of the Netflix homepage, built entirely with **HTML** and **CSS**.
 The goal was to replicate the look and feel of the Netflix landing page as closely as possible,
 focusing on the layout design.
 
